@@ -1,0 +1,110 @@
+.footer {
+  background-color: #2f303a;
+  &__logo-in,
+  &__box {
+    margin-right: 70px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-style: normal;
+    color: $white-color;
+  }
+  &__socials-list {
+    display: flex;
+  }
+  &__input {
+    width: 358px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+
+  &__form {
+    margin-left: 30px;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $white-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: $transition;
+  }
+  &__socials:hover,
+  &__socials:focus {
+    background-color: $accent-color;
+    fill: $btn-color2;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.contacts {
+  padding: 60px 0;
+  display: flex;
+}
+.address {
+  display: flex;
+  margin-top: 20px;
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__link--map {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $white-color;
+    transition: $transition;
+  }
+  &__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+}
+.send {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 13px 28px;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.icon__send {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 27px;
+  transform: translateY(-50%);
+  margin-left: 10px;
+}
