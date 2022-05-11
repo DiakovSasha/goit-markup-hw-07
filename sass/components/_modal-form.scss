@@ -111,6 +111,10 @@
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
+  &__textarea:hover {
+    border-color: $accent-color;
+    cursor: pointer;
+  }
 }
 .modal {
   position: absolute;
